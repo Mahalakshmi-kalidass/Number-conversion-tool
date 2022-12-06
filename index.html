@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  
+    <section>
+    <form id="form">
+        <h1>Number Conversion Tool</h1>
+      <div class="row">
+       <label class="label" for="decimal">Decimal</label>
+       <input class="input" type="text" id="deci" name="decimal" oninput="convert(this)"/>
+       <span class="span" >[Base:10]</span>
+      </div>
+      <span id="decerror" class="error">*Invalid input.alphabets can't be converted.Press Reset</span>
+      <div class="row">
+        <label  class="label" for="hexa">HexaDecimal</label>
+        <input class="input"  type="text" id="hex" name="hexa" oninput="convert(this)" />
+        <span class="span" >[Base:16]</span>
+      </div>
+       <span  id="hexerror" class="error">*Invalid input.only A to F are allowed in alphabets.Press Reset </span>
+      <div class="row">
+       <label class="label"  for="octal">Octal</label>
+       <input class="input"  type="text" id="oct" name="octal" oninput="convert(this)"/>
+       <span class="span" >[Base:8]</span>
+      </div>
+       <span id="octerror" class="error">*Invalid input digits above 8 or alphabets are not allowed in octal.Press Reset</span>
+      <div class="row">
+       <label  class="label" for="binary">Binary</label>
+       <input  class="input" type="text" id="bin"  name="binary" oninput="convert(this)"/>
+       <span class="span" >[Base:2]</span>
+      </div>
+       <span id="binerror" class="error">*Invalid input.only 0's and 1's are allowed.Press Reset</span>
+       <div>
+         <input id="reset"type="reset" onclick="setting()"/>
+       </div>
+    </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+  <footer>This developed By Mahalakshmi Kalidass</footer>
+</html>
